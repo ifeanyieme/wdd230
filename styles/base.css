@@ -1,0 +1,127 @@
+/* Add your CSS styles here */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Roboto+Slab:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+header, footer {
+    background-color:darkslategray;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.header-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.header-content span {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+}
+
+.header-content img {
+    border-radius: 15px; /* Make the image round */
+    margin-right: 10px; /* Add some space between the image and text */
+    padding: 10px;
+}
+
+/*Navigation Styling*/
+header, nav{
+    margin-top: 5px;
+}
+
+nav {
+    background-color: rgb(36, 83, 95);
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: block; /* Display list items inline */
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px; /* Add padding to the left and right */
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav .active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-decoration: underline;
+    margin: 2rem 2vw;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+    background-color: #2d1244;
+    margin: auto;
+}
+
+p {
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.parent {
+    margin: 2rem 2vw;
+}
+
+.parent section {
+    border: 3px solid rgba(48, 44, 44, 0.767);
+    background-color: #451da1c0;
+    color: #fff;
+    border-radius: 5px;
+}
+
+main ul li {
+    list-style-type: none;
+    padding: 10px 0 0 20px;
+}
+
+main a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card {
+    margin: 15px 0 15px;
+}
+
+footer div {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    display: block;
+}
+
+
