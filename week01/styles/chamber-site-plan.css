@@ -71,14 +71,47 @@ footer {
     text-decoration: underline;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
+/* CSS for desktop */
+
+/* Adjustments for tablets and smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        text-align: center;
     }
 
-    .footer-section {
-        margin-right: 0;
-        margin-bottom: 20px;
+    /* Section adjustments */
+    section {
+        padding: 20px;
+    }
+
+    /* Footer adjustments */
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
+
+/* CSS for mobile devices */
+@media only screen and (max-width: 480px) {
+    /* Header adjustments */
+    header {
+        font-size: 1.5rem;
+    }
+
+    /* Section adjustments */
+    section {
+        padding: 10px;
+    }
+
+    /* Footer adjustments */
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
