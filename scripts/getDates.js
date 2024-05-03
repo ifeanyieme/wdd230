@@ -9,3 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var lastModifiedDate = new Date(document.lastModified);
     lastModifiedSpan.textContent = "Last modified: " + lastModifiedDate.toLocaleString();
 });
+
+const hamburgerElement = document.querySelector('#myButton')
+const navElement = document.querySelector('#animateMe')
+
+hamburgerElement.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburgerElement.classList.toggle('open')
+})

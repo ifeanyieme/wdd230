@@ -1,19 +1,14 @@
-/* Add your CSS styles here */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Roboto+Slab:wght@500&display=swap');
-
-
-*{
+ /* Add your CSS styles here */
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
  }
 
 header, footer {
-    background-color:darkslategrey;
+    background-color: navy;
     color: #fff;
     text-align: center;
-    font-size: 20px;
-
 }
 
 .header-content {
@@ -35,14 +30,49 @@ header, footer {
 
 /*Navigation Styling*/
 header, nav{
-    margin-top: 5px;
+    margin-top: 0;
 }
+
+#myButton {
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: right;
+    width: 44px;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: 2vw;
+}
+
+#myButton::before {
+    content: '\2630';
+}
+
+#myButton.open::before {
+    content: 'x';
+}
+
+
 
 nav {
-    background-color: rgb(36, 83, 95);
-    padding: 10px;
+    background-color: rgb(36, 36, 95);
+    padding: 0;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
 }
 
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
 
 nav ul {
     list-style-type: none;
@@ -79,7 +109,7 @@ h1 {
 h2 {
     text-align: center;
     padding: 5px;
-    background-color: #2d1244;
+    background-color: #1619cf9f;
     margin: auto;
 }
 
@@ -96,7 +126,7 @@ p {
 
 .parent section {
     border: 3px solid rgba(48, 44, 44, 0.767);
-    background-color: #451da1c0;
+    background-color: #130929d3;
     color: #fff;
     border-radius: 5px;
 }
