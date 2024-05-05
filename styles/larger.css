@@ -9,6 +9,18 @@
         box-shadow: 2px 2px 20px black;
     }
 
+    #myButton {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
     nav ul {
         list-style-type: none;
         padding: 0;
@@ -24,164 +36,7 @@
     img {
         box-shadow: 0 4px 8px rgba(14, 13, 13, 0.1); /* Add shadow */
     }
-     /* Add your CSS styles here */
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
-
-header, footer {
-    background-color: navy;
-    color: #fff;
-    text-align: center;
-}
-
-.header-content {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center items horizontally */
-}
-
-.header-content span {
-    font-size: 2rem; /* Adjust the font size as needed */
-    font-weight: bold; /* Make the text bold */
-}
-
-.header-content img {
-    border-radius: 15px; /* Make the image round */
-    margin-right: 10px; /* Add some space between the image and text */
-    padding: 10px;
-}
-
-/*Navigation Styling*/
-header, nav{
-    margin-top: 0;
-}
-
-#myButton {
-    background: none;
-    font-size: 1.5rem;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    text-align: right;
-    width: 44px;
-    padding: .25rem 2vw;
-    position: absolute;
-    top: 0;
-    right: 0;
-    right: 2vw;
-}
-
-#myButton::before {
-    content: '\2630';
-}
-
-#myButton.open::before {
-    content: 'x';
-}
-
-
-
-nav {
-    background-color: rgb(36, 36, 95);
-    padding: 0;
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s ease-out;
-}
-
-nav ul {
-    overflow: hidden;
-}
-
-nav.open {
-    grid-template-rows: 1fr;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: block; /* Display list items inline */
-}
-
-nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px; /* Add padding to the left and right */
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-nav .active {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-h1 {
-    text-decoration: underline;
-    margin: 2rem 2vw;
-    padding: 10px;
-}
-
-h2 {
-    text-align: center;
-    padding: 5px;
-    background-color: #1619cf9f;
-    margin: auto;
-}
-
-p {
-    padding: 10px 20px;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.parent {
-    margin: 2rem 2vw;
-}
-
-.parent section {
-    border: 3px solid rgba(48, 44, 44, 0.767);
-    background-color: #130929d3;
-    color: #fff;
-    border-radius: 5px;
-}
-
-main ul li {
-    list-style-type: none;
-    padding: 10px 0 0 20px;
-}
-
-main a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.card {
-    margin: 15px 0 15px;
-}
-
-footer div {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center items horizontally */
-    display: block;
-}
-
-
-
+    
     footer div {
         padding: 0;
         margin: 0;
