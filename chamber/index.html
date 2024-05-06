@@ -11,49 +11,143 @@
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/social_image.jpg">
-    <link rel="icon" href="images/my-.png" type="image/x-icon">
+    <link rel="icon" href="images/my-favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
 </head>
 <body>
-    <!-- Header section -->
+    <!-- Header -->
     <header>
-        <!-- Navigation menu -->
-        <nav>
-            <!-- Your navigation links will go here -->
-        </nav>
+       
+        <div class="header-content">
+        <div class="logo">
+            <img src="images/abia-chamber.png" alt="Commerce Logo">
+        </div>
+            
+            <!-- Navigation -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Directive</a></li>
+                    <li><a href="#">Join</a></li>
+                    
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main content section -->
+    <!-- Main Content Area -->
     <main>
-        <!-- Hero image section -->
+        <!-- Hero Image -->
         <section class="hero">
-            <!-- Your hero image and content will go here -->
+            
         </section>
 
-        <!-- Call to action section -->
+        <!-- Call to Action -->
         <section class="cta">
-            <!-- Your call to action content will go here -->
+            <h2>Join the Chamber of Commerce</h2>
+            <p>Learn about the benefits of becoming a member and join today!</p>
+            <a href="#" class="cta-button">Join Now</a>
         </section>
-
-        <!-- Current events section -->
+        <p>Welcome to our Chamber of Commerce website! We're thrilled to have you here. Whether you're a local business owner, a community member, or someone looking to connect with our vibrant business community, you've come to the right place. Our Chamber is dedicated to supporting the growth and success of businesses in our area, fostering collaboration, and creating opportunities for networking and development. Through our events, resources, and advocacy efforts, we strive to empower businesses of all sizes to thrive and contribute to the economic vitality of our region. Explore our website to discover the myriad ways we can support you, from networking events to educational workshops and advocacy initiatives.<p>
+        <p>Join us in building a stronger, more prosperous community together. Welcome aboard!</p>
+    </section>
+    <div id="background"></div>
+        
         <section class="events">
-            <!-- Your current events content will go here -->
+            <h2>Current Events</h2>
+            <img src="images/crops.jpg" alt="Commerce Logo"  width="300" height="300" >
+            <!-- Add content for current events -->
         </section>
 
-        <!-- Weather card section -->
+        <!-- Weather Card -->
         <section class="weather">
-            <!-- Your weather card content will go here -->
+            <h2>Weather Forecast</h2>
+            <p>Check the <a href="https://weathercrave.com/weather-forecast">weather forecast</a> for the latest updates.</p>
+            <section class="weather">
+                <h2>Weather Forecast</h2>
+                <div id="weather-info"></div>
+            </section>
+            
+            <script>
+            // Replace 'YOUR_API_KEY' with your actual API key
+            const apiKey = 'weathercrave.com';
+            const apiUrl = 'https://www.weathercrave.com/weather-forecast-nigeria/country-127/weather-forecast-nigeria-today' + weathercrave.com;
+            
+            // Function to fetch weather data from API
+            function fetchWeather() {
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Process the weather data and display it on the page
+                        displayWeather(data);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching weather data:', error);
+                    });
+            }
+            
+            // Function to display weather data on the page
+            function displayWeather(data) {
+                const weatherInfo = document.getElementById('weather-info');
+            
+                // Extract relevant information from the weather data
+                const cityName = data.name;
+                const temperature = Math.round(data.main.temp - 273.15); // Convert temperature from Kelvin to Celsius
+                const weatherDescription = data.weather[0].description;
+            
+                // Create HTML content to display the weather information
+                const html = `
+                    <p>Location: ${abiastate}</p>
+                    <p>Temperature: ${temperature}°C</p>
+                    <p>Weather: ${weatherDescription}</p>
+                `;
+            
+                // Update the weather-info div with the HTML content
+                weatherInfo.innerHTML = html;
+            }
+            
+            // Fetch weather data when the page loads
+            fetchWeather();
+            </script>
+            
+        </section>
+        
+            <!-- Add content for weather forecast -->
         </section>
 
-        <!-- Company spotlights section -->
+        <!-- Company Spotlights -->
         <section class="spotlights">
-            <!-- Your company spotlights content will go here -->
+            <h2>Company Spotlights</h2>
+
+            <!-- Add content for company spotlights -->
         </section>
     </main>
 
-    <!-- Footer section -->
+    <!-- Footer -->
     <footer>
-        <!-- Your footer content will go here -->
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span>Eme Ifeanyi Okali</p>
+            <p id="lastModified"></p>
+            <script src="scripts/getDates.js"></script> 
+            <!-- Add contact information -->
+        </div>
+        <!-- Development Information -->
+        <div class="dev-info">
+            <p>Developed by Eme Ifeanyi Okali for WDD 230</p>
+            <!-- Last Modification Date -->
+            <p>Last modified: <span id="lastModified"></span></p>
+        </div>
+    </div>
+        </div>
     </footer>
+   
+  
+
+    <!-- JavaScript -->
+    <!-- Add JavaScript code for last modification date -->
 </body>
 </html>
