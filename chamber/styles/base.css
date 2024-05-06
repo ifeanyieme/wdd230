@@ -3,8 +3,8 @@
 
 /* Typography */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto, sans-serif';
+    font-size: 20px;
     line-height: 1.6;
 }
 
@@ -20,7 +20,7 @@ header {
     padding: 20px 0;
 }
 .hero {
-    background-image: url('agric.jpg');
+    background-image: url('my-hero-image.jpg');
     background-size: cover;
     background-position: center;
     height: 90vh; 
@@ -35,8 +35,8 @@ header {
 }
 
 .logo img {
-    display: block;
-    width: 100px; /* Adjust the width to make the logo smaller */
+    display:flex;
+    width: 80px; /* Adjust the width to make the logo smaller */
     height: auto;
     margin-right: 20px;
 }
@@ -46,7 +46,7 @@ header {
 nav {
     
     padding: 10px 0;
-    text-align:center;
+    
    
 }
 
@@ -61,6 +61,7 @@ nav {
 .nav-links li {
     display: inline-block;
     margin-right: 20px;
+    text-align: center;
 }
 
 .nav-links li:last-child {
@@ -102,13 +103,23 @@ main {
     gap: 20px; /* Adjust the gap between grid items */
 }
 
-.weather, .spotlights {
-    background-color: #f0f0f0; /* Background color for sections */
-    padding: 20px; /* Add padding to the sections */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
-.weather h2, .spotlights h2 {
-    margin-top: 0; /* Remove top margin for headings */
+.weather, .spotlights, .events {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.spotlights {
+    grid-column: span 1;
+}
+
+.weather, .events {
+    grid-column: span 2;
 }
 
 /* Call to Action */
@@ -152,8 +163,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
+}
 .contact-info {
     max-width: 400px;
 }
@@ -215,51 +226,77 @@ footer {
 .footer-section a:hover {
     text-decoration: underline;
 }
+.footer {
+   
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
 
-/* CSS for desktop */
+.social-media-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-/* Adjustments for tablets and smaller screens */
-@media only screen and (max-width: 768px) {
-    /* Header adjustments */
-    header {
-        text-align: center;
-    }
+.social-media-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
 
-    /* Section adjustments */
-    section {
+.social-media-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-media-icons li a img {
+    width: 30px; /* Adjust the width and height as needed */
+    height: 30px;
+    border-radius: 50%;
+}
+/* Base CSS */
+/* Define base styles for elements */
+
+/* Larger screens */
+@media only screen and (min-width: 768px) {
+    /* Styles for larger screens */
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 20px;
     }
 
-    /* Footer adjustments */
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .nav-links {
-        margin-top: 10px;
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
 
     .nav-links li {
-        display: block;
-        margin-bottom: 10px;
+        margin-right: 20px;
     }
 
-    .footer-content {
+    .logo img {
+        max-width: 100px;
+        height: auto;
+    }
+}
+
+/* Smaller screens */
+@media only screen and (max-width: 767px) {
+    /* Styles for smaller screens */
+    .header-content {
         flex-direction: column;
-        text-align: center;
+        padding: 10px;
     }
 
-    .contact-info, .dev-info {
-        margin-top: 20px;
-        text-align: center;
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
     }
 }

@@ -10,7 +10,9 @@
     <!-- Social Media Meta Tags -->
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/social_image.jpg">
+    <meta property="og:image" content="images/facebook.png">
+    <meta property="og:image" content="images/twitter.png">
+    <meta property="og:image" content="images/instagram.png">
     <link rel="icon" href="images/my-favicon.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -57,93 +59,77 @@
     </section>
     <div id="background"></div>
         
-        <section class="events">
-            <h2>Current Events</h2>
-            <img src="images/crops.jpg" alt="Commerce Logo"  width="300" height="300" >
-            <!-- Add content for current events -->
-        </section>
-
-        <!-- Weather Card -->
+    <main class="grid-container">
+        <!-- Weather Section -->
         <section class="weather">
             <h2>Weather Forecast</h2>
-            <p>Check the <a href="https://weathercrave.com/weather-forecast">weather forecast</a> for the latest updates.</p>
-            <section class="weather">
-                <h2>Weather Forecast</h2>
-                <div id="weather-info"></div>
-            </section>
-            
-            <script>
-            // Replace 'YOUR_API_KEY' with your actual API key
-            const apiKey = 'weathercrave.com';
-            const apiUrl = 'https://www.weathercrave.com/weather-forecast-nigeria/country-127/weather-forecast-nigeria-today' + weathercrave.com;
-            
-            // Function to fetch weather data from API
-            function fetchWeather() {
-                fetch(apiUrl)
-                    .then(response => response.json())
-                    .then(data => {
-                        // Process the weather data and display it on the page
-                        displayWeather(data);
-                    })
-                    .catch(error => {
-                        console.error('Error fetching weather data:', error);
-                    });
-            }
-            
-            // Function to display weather data on the page
-            function displayWeather(data) {
-                const weatherInfo = document.getElementById('weather-info');
-            
-                // Extract relevant information from the weather data
-                const cityName = data.name;
-                const temperature = Math.round(data.main.temp - 273.15); // Convert temperature from Kelvin to Celsius
-                const weatherDescription = data.weather[0].description;
-            
-                // Create HTML content to display the weather information
-                const html = `
-                    <p>Location: ${abiastate}</p>
-                    <p>Temperature: ${temperature}°C</p>
-                    <p>Weather: ${weatherDescription}</p>
-                `;
-            
-                // Update the weather-info div with the HTML content
-                weatherInfo.innerHTML = html;
-            }
-            
-            // Fetch weather data when the page loads
-            fetchWeather();
-            </script>
-            
+            <div id="weather-info">
+                    <section class="cta">
+                        <p>We got  you covered, a sunny day for fun trade ,and Rainy day for fresh crops</p>
+                        <a href="#" class="cta-button">Click here to check the weather</a>
+                        <p>Or</p>
+                        <p>Check the <a href="https://www.weathercrave.com/weather-forecast-nigeria/country-127/weather-forecast-nigeria-today" target="_blank">weather forecast</a> for the latest updates.</p>
+                        <img src="images/crops-2.jpg" alt="Farmers" width="800" height="400">
+                    </section>
+                <!-- Weather forecast content will be dynamically inserted here -->
+            </div>
         </section>
-        
-            <!-- Add content for weather forecast -->
-        </section>
-
-        <!-- Company Spotlights -->
+    
+        <!-- Company Spotlight Section -->
         <section class="spotlights">
             <h2>Company Spotlights</h2>
-
-            <!-- Add content for company spotlights -->
+            <!-- Placeholder content for company spotlights -->
+            <div class="spotlight">
+                <h3>Abia Chamber Commerce Achivements</h3>
+                
+                <p>Connnected 75% more customers into buying made-in Abia products agricultural crops, leading to broader national/International recogniton.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Testimonials</h3>
+                <p>"Ever since i attended a trade fair event, hosted by Abia Chamber of Commerce, my business has been thriving, as I've been connected to clients from all over the world."</p>
+                <p>Glory Akpan(Farmer)</p>
+            </div>
+            <div class="spotlight">
+                <h3>Awards/Membership</h3>
+                <p>1. Winner, International Exports and Imports organisation of the year</p> 
+                <p>2. Members International Trade Fair</p>
+                <p>2. First State commerce organisation to employ 70% of Youths</p>
+            </div>
+            <!-- Add more spotlights as needed -->
+        </section>
+    
+        <!-- Events Section -->
+        <section class="events">
+            <h2>Current /UpcomingEvents</h2>
+            <p> Trade Fair      08 May 2024</p>
+            <p>Agriculture and Technology Seminar With the Minister of Agriculture  19 May 2024</p>
+            
+            <!-- Add content for current events -->
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; <span id="year"></span>Eme Ifeanyi Okali</p>
+            <p>&copy; <span id="year"></span> Eme Ifeanyi Okali</p>
             <p id="lastModified"></p>
-            <script src="scripts/getDates.js"></script> 
-            <!-- Add contact information -->
-        </div>
-        <!-- Development Information -->
-        <div class="dev-info">
-            <p>Developed by Eme Ifeanyi Okali for WDD 230</p>
-            <!-- Last Modification Date -->
-            <p>Last modified: <span id="lastModified"></span></p>
-        </div>
-    </div>
+            <p>Weather: <span id="weather">N/A</span></p>
+                <!-- Placeholder for number of visits to the page -->
+                <p>Visits: <span id="visits">N/A</span></p>
+                <p>23 GRA Avenue</p>
+                <p>Umuahia, Abia State</p>
+                <p>Email: emeprosper4@gmail.com</p>
+              
+                <footer class="footer">
+                    <ul class="social-media-icons">
+                        <li><a href="https://www.facebook.com/YourPage" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="https://twitter.com/YourAccount" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="https://www.instagram.com/YourAccount" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></li>
+                        <!-- Add more social media icons as needed -->
+                    </ul>
+
         </div>
     </footer>
+    <script src="scripts/getDates.js"></script> 
    
   
 
