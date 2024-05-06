@@ -257,46 +257,32 @@ footer {
 /* Define base styles for elements */
 
 /* Larger screens */
-@media only screen and (min-width: 768px) {
-    /* Styles for larger screens */
-    .header-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
 
-    .nav-links {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
+/* Media Queries */
 
-    .nav-links li {
-        margin-right: 20px;
-    }
-
-    .logo img {
-        max-width: 100px;
-        height: auto;
-    }
-}
-
-/* Smaller screens */
+/* Media Queries */
 @media only screen and (max-width: 767px) {
     /* Styles for smaller screens */
     .header-content {
         flex-direction: column;
-        padding: 10px;
-    }
-
-    .nav-links {
-        flex-direction: column;
         align-items: center;
     }
 
+    .nav-links {
+        margin-top: 10px;
+    }
+
     .nav-links li {
-        margin: 10px 0;
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
     }
 }
