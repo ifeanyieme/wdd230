@@ -49,6 +49,28 @@ nav {
     
    
 }
+#myButton {
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: right;
+    width: 44px;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: 2vw;
+}
+
+#myButton::before {
+    content: '\2630';
+}
+
+#myButton.open::before {
+    content: 'x';
+}
 
 .nav-links {
     list-style-type: none;
@@ -261,28 +283,3 @@ footer {
 /* Media Queries */
 
 /* Media Queries */
-@media only screen and (max-width: 767px) {
-    /* Styles for smaller screens */
-    .header-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links {
-        margin-top: 10px;
-    }
-
-    .nav-links li {
-        display: block;
-        margin-bottom: 10px;
-        margin-right: 0;
-    }
-
-    .logo img {
-        margin-bottom: 10px;
-    }
-
-    main {
-        padding: 10px;
-    }
-}
