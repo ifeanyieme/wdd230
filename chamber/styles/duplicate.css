@@ -1,0 +1,53 @@
+/* Inside styles.css */
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* Sidebar takes 1 fraction of available space */
+    grid-template-rows: auto auto 1fr auto; /* Header, Nav, Main Content, Footer */
+    grid-template-areas:
+        "header"
+        "nav"
+        "sidebar"
+        "footer";
+    height: 100vh; /* Ensure container covers entire viewport height */
+}
+
+header {
+    grid-area: header;
+    background-color: #333; /* Example background color */
+    color: #fff; /* Example text color */
+    padding: 10px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #444; /* Example background color */
+    color: #fff; /* Example text color */
+    padding: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar width and main content */
+    grid-template-rows: 1fr; /* Main content takes entire height */
+    grid-template-areas: "sidebar main-content"; /* Define areas */
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #555; /* Example background color */
+    color: #fff; /* Example text color */
+    padding: 10px;
+}
+
+.main-content {
+    grid-area: main-content;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #666; /* Example background color */
+    color: #fff; /* Example text color */
+    padding: 10px;
+}

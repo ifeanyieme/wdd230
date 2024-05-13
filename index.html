@@ -4,20 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eme Ifeanyi Okali - WDD 230 - Web Front Development</title>
+
+    <!-- Social Media Meta Settings -->
+    <meta property="og:title" content="Breaking: New Study Reveals Surprising Benefits of Meditation">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://example.com/meditation.jpg">
+    <meta property="og:url" content="https://example.com/articles/new-study-benefits-meditation">
+    <meta property="og:description" content="Learn about the surprising benefits of meditation revealed in a new study.">
+
+    <meta property="og:site_name" content="Your Website Name">
+
+    <meta name="twitter:title" content="Breaking: New Study Reveals Surprising Benefits of Meditation">
+    <meta name="twitter:image" content="https://example.com/meditation.jpg">
+    <meta name="twitter:url" content="https://example.com/articles/new-study-benefits-meditation">
+    <!-- End Social Media Meta Settings -->
+
+    <!-- Facebook Meta Tags -->
+    <meta property="fb:app_id" content="Your Facebook App ID">
+    <!-- End Facebook Meta Tags -->
+
+    <!-- LinkedIn Meta Tags -->
+    <meta property="og:article:author" content="Your LinkedIn Profile URL">
+    <meta property="og:article:published_time" content="Article Published Time">
+    <meta property="og:article:section" content="Article Section">
+    <!-- End LinkedIn Meta Tags -->
+
     <meta name="description" content="Dive into HTML, CSS, JavaScript, and beyond, honing your skills with interactive modules and expert guidance.">
-    <meta name="author" content="Eme Ifeanyi Okali">
+    <meta name="author" content="Christian Uzomba Uche">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="icon" href="week01/images/my-favicon.jpeg" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
+        <div id="mode">
+            🕶️
+        </div>
         <div class="header-content">
-            <img src="images/Eme-Pic.jpeg" alt="Eme Ifeanyi Profile" width="75" height="100">
+            <img src="images/Eme-Pic.jpeg" alt="Eme Ifeanyi Okali Profile" width="75" height="100">
             <span>Eme Ifeanyi Okali</span>
         </div>
     </header>
@@ -25,11 +54,19 @@
         <button id='myButton'></button>
         <ul class="menuLinks">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
             <li><a href="site-plan.html">Site Plan</a></li>
             <li><a href="form.html">Form</a></li>
         </ul>
     </nav>
+    <div class="hero">
+        <picture>
+            <source srcset="images/aba-nigeria-temple-small-views" media="(max-width: 150px)">
+            <source srcset="images/aba-nigeria-temple-medium-views" media="(max-width: 300px)">
+            <img src="images/aba_nigeria_temple_lds (1).jpeg" alt="aba temple" width="1500" height="650">
+        </picture>
+        <span><p>Aba Nigeria Temple</p></span>
+    </div>
     <main>
         <h1>
             WDD 230: Web Frontend Development
@@ -40,26 +77,40 @@
                     Learning Activities
                 </h2>
                 <ul>
-                    <li><a href="#">Week 01:</a></li>
-                    <li><a href="#">Week 02:</a></li>
-                    <li><a href="#">Week 03:</a></li>
-                    <li><a href="#">Week 04:</a></li>
-                    <li><a href="#">Week 05:</a></li>
-                    <li><a href="#">Week 06:</a></li>
-                </ul>
+                    <li><p>Week 01:
+                        <span><a href="#"></a> | <a href="#"></a></span>
+                    </p></li>
+                    <li><p>Week 02:
+                        <span><a href="#"></a> | <a href="#"></a></span>
+                    </p></li>
+                    <li><p>Week 03:
+                        <span><a href="#"></a> | <a href="#"></a></span>
+                    </p></li>
+                    <li><p>Week 04:
+                        <span><a href="#"></a> | <a href="#"></a></span>
+                    </p></li>
+                    <li><p>Week 05:
+                        <span><a href="#"></a> | <a href="#"></a></span>
+                    </p></li>
+                    <li><p>Week 06:
+                        <span><a href="#"></a> | <a href="#"></a></span>
+                    </p></li>
             </section>
             <section class="card">
                 <h2>
                     Information
                 </h2>
                 <!-- Placeholder for weather information -->
-                <p>Weather: <span id="weather">N/A</span></p>
+                <p>Weather: <span id="weather">Loading.....</span></p>
                 <!-- Placeholder for number of visits to the page -->
-                <p>Visits: <span id="visits">N/A</span></p>
+                <p>Visits: <span id="visits">0</span></p>
                 <!-- Add more information placeholders as needed -->
             </section>
         </div>
     </main>
+    <div class="responsive-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d6276.387907176467!2d7.8170436382796!3d5.6310406545053775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d5.6341263!2d7.8216141!4m5!1s0x105d2b02aef53b95%3A0x59b6c28e7bd6fb9d!2sEbem%20442112%2C%20Abia!3m2!1d5.6310556!2d7.8221785!5e1!3m2!1sen!2sng!4v1715495419829!5m2!1sen!2sng" width="600" height="200" style="border: 5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
         <div class="footer-content">
             <p>&copy; <span id="year"></span>Eme Ifeanyi Okali</p>
