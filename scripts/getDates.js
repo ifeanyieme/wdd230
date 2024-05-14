@@ -10,26 +10,33 @@ document.addEventListener("DOMContentLoaded", function() {
     lastModifiedSpan.textContent = "Last modified: " + lastModifiedDate.toLocaleString();
 });
 
-const hamburgerElement = document.querySelector('#myButton')
-const navElement = document.querySelector('#animateMe')
+cdocument.addEventListener("DOMContentLoaded", function() {
+    // Select DOM elements
+    const hamburgerElement = document.querySelector('#myButton');
+    const navElement = document.querySelector('#animateMe');
+    const yearSpan = document.getElementById("year");
+    const lastModifiedSpan = document.getElementById("lastModified");
 
-hamburgerElement.addEventListener('click', () => {
-    navElement.classList.toggle('open');
-    hamburgerElement.classList.toggle('open')
-})document.addEventListener("DOMContentLoaded", function() {
-    // Copyright year
-    var yearSpan = document.getElementById("year");
-    var currentYear = new Date().getFullYear();
+    // Error handling for missing elements
+    if (!hamburgerElement || !navElement || !yearSpan || !lastModifiedSpan) {
+        console.error("One or more required elements not found in the DOM.");
+        return; // Exit the function to prevent further execution
+    }
+
+    // Toggle navigation menu on hamburger menu click
+    hamburgerElement.addEventListener('click', () => {
+        navElement.classList.toggle('open');
+        hamburgerElement.classList.toggle('open');
+    });
+
+    // Set current year
+    const currentYear = new Date().getFullYear();
     yearSpan.textContent = currentYear;
 
-    // Last modified date
-    var lastModifiedSpan = document.getElementById("lastModified");
-    var lastModifiedDate = new Date(document.lastModified);
+    // Set last modified date
+    const lastModifiedDate = new Date(document.lastModified);
     lastModifiedSpan.textContent = "Last modified: " + lastModifiedDate.toLocaleString();
 });
-
-const hamburgerElement = document.querySelector('#myButton')
-const navElement = document.querySelector('#animateMe')
 
 hamburgerElement.addEventListener('click', () => {
     navElement.classList.toggle('open');

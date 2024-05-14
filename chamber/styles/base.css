@@ -71,6 +71,133 @@ nav {
 #myButton.open::before {
     content: 'x';
 }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+.sidebar {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.658);
+}
+
+.sidebar-content {
+    max-width: 300px; /* Adjust width as needed */
+    margin: 0 auto;
+    background-color: #03105a6e;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.sidebar h2 {
+    font-size: 2rem;
+    color: #ff0000e0;
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.sidebar p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #f0f2f5de;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #e04545;
+}
+
+.card-1 {
+    background-color: #005;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px;
+}
+
+.card-2 {
+    background-color: #005;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px;
+}
+
+.card-3 {
+    background-color: #005;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px;
+}
+
+.card-4 {
+    background-color: #005;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    background-color: #070c1ad2;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.658);
+}
+
+.container.stdlv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; /* Adjust gap between images */
+}
+
+figure {
+    background-color:#fff;
+}
+img { 
+    width: 100%; 
+    height: auto; 
+    margin: .5rem;}
+figcaption {font-size: smaller;}
+/* hover effect */
+
 
 .nav-links {
     list-style-type: none;
@@ -275,11 +402,8 @@ footer {
     height: 30px;
     border-radius: 50%;
 }
-/* Base CSS */
-/* Define base styles for elements */
-
-/* Larger screens */
-
-/* Media Queries */
-
-/* Media Queries */
+@media (max-width: 768px) {
+    .content .lazy-image:hover {
+        transform: none;
+    }
+}

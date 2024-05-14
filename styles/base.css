@@ -64,6 +64,17 @@ header, nav{
 	font-size: 1.5rem;
 	cursor: pointer;
 }
+.animateMe {
+    /* Define default styles for the element */
+    background-color: #ffffff; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+
+.dark-mode .animateMe {
+    /* Dark mode styles */
+    background-color: #333333; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
 
 
 nav {
