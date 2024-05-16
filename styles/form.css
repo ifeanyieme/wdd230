@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --error-color: #e74c3c;
+  }
+ /* Add your CSS styles here */
+ @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+header, footer {
+    background-color: navy;
+    color: #fff;
+    text-align: center;
+}
+
+.header-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.header-content span {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+}
+
+.header-content img {
+    border-radius: 15px; /* Make the image round */
+    margin-right: 10px; /* Add some space between the image and text */
+    padding: 10px;
+}
+
+/*Navigation Styling*/
+header, nav{
+    margin-top: 0;
+}
+
+#myButton {
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: right;
+    width: 44px;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: 2vw;
+}
+
+#myButton::before {
+    content: '\2630';
+}
+
+#myButton.open::before {
+    content: 'x';
+}
+
+#mode {
+	position: absolute;
+	top: 3rem;
+	right: .5rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.animateMe {
+    /* Define default styles for the element */
+    background-color: #ffffff; /* Light background color */
+    color: #000000; /* Dark text color */
+}
+
+.dark-mode .animateMe {
+    /* Dark mode styles */
+    background-color: #333333; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
+
+
+nav {
+    background-color: rgb(36, 36, 95);
+    padding: 0;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: block; /* Display list items inline */
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px; /* Add padding to the left and right */
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav .active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  /* Basic form styling */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .error-message {
+    color: var(--error-color);
+    margin-top: 5px;
+  }

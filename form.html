@@ -37,8 +37,7 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <header>
@@ -59,58 +58,26 @@
             <li><a href="form.html">Form</a></li>
         </ul>
     </nav>
-    <div class="hero">
-        <picture>
-            <source srcset="images/aba-nigeria-temple-small-views" media="(max-width: 150px)">
-            <source srcset="images/aba-nigeria-temple-medium-views" media="(max-width: 300px)">
-            <img src="images/aba_nigeria_temple_lds (1).jpeg" alt="aba temple" width="1500" height="650">
-        </picture>
-        <span><p>Aba Nigeria Temple</p></span>
-    </div>
-    <main>
-        <h1>
-            WDD 230: Web Frontend Development
-        </h1>
-        <div class="parent">
-            <section class="card">
-                <h2>
-                    Learning Activities
-                </h2>
-                <ul>
-                    <li><p>Week 01:
-                        <span><a href="#"></a> | <a href="#"></a></span>
-                    </p></li>
-                    <li><p>Week 02:
-                        <span><a href="#"></a> | <a href="#"></a></span>
-                    </p></li>
-                    <li><p>Week 03:
-                        <span><a href="#"></a> | <a href="#"></a></span>
-                    </p></li>
-                    <li><p>Week 04:
-                        <span><a href="#"></a> | <a href="#"></a></span>
-                    </p></li>
-                    <li><p>Week 05:
-                        <span><a href="#"></a> | <a href="#"></a></span>
-                    </p></li>
-                    <li><p>Week 06:
-                        <span><a href="#"></a> | <a href="#"></a></span>
-                    </p></li>
-            </section>
-            <section class="card">
-                <h2>
-                    Information
-                </h2>
-                <!-- Placeholder for weather information -->
-                <p>Weather: <span id="weather">Loading.....</span></p>
-                <!-- Placeholder for number of visits to the page -->
-                <p>Visits: <span id="visits">0</span></p>
-                <!-- Add more information placeholders as needed -->
-            </section>
-        </div>
-    </main>
-    <div class="responsive-iframe">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d6276.387907176467!2d7.8170436382796!3d5.6310406545053775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d5.6341263!2d7.8216141!4m5!1s0x105d2b02aef53b95%3A0x59b6c28e7bd6fb9d!2sEbem%20442112%2C%20Abia!3m2!1d5.6310556!2d7.8221785!5e1!3m2!1sen!2sng!4v1715495419829!5m2!1sen!2sng" width="600" height="200" style="border: 5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    
+<form action="record.html" method="get" onsubmit="return validateForm()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters long and can only be alphanumeric" required>
+  
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" title="Please enter a valid email address from the byui.edu domain" required>
+  
+    <label for="page_rating">Page Rating:</label>
+    <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" onchange="updateValue(this.value)">
+    <span id="rating_value">5</span>
+  
+    <input type="submit" value="Submit">
+  </form>
     <footer>
         <div class="footer-content">
             <p>&copy; <span id="year"></span>Eme Ifeanyi Okali</p>
@@ -119,6 +86,8 @@
             <span>Nigeria</span>
         </div>
     </footer>
-    <script src="scripts/getDates.js"></script>    
+    <script src="scripts/getDates.js"></script>   
+    <script src="scripts/form.js"></script> 
+    <form action="record.html" method="get" onsubmit="return validateForm()"></form>
 </body>
 </html>
