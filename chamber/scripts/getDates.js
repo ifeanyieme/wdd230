@@ -44,3 +44,4 @@ if (typeof(Storage) !== "undefined") {
     // Browser does not support localStorage
     console.log("localStorage is not supported in this browser.");
 }
+document.getElementById('timestamp').value = new Date().toISOString();
