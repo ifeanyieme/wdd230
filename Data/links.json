@@ -1,0 +1,63 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week1/activity1.html",
+                    "title": "HolyGrail Layout"
+                },
+                {
+                    "url": "week1/activity2.html",
+                    "title": "Media Queries"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week2/responsive.html",
+                    "title": "Responsive Design"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week3/responsive.html",
+                    "title": "Responsive Design"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "week4/responsive.html",
+                    "title": "Responsive Design"
+                }
+               
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "week5/responsive.html",
+                    "title": "Responsive Design"
+                }
+            ]
+        },
+        {
+            "week": "Week 6",
+            "links": [
+                {
+                    "url": "week2/responsive.html",
+                    "title": "Responsive Design"
+                }
+            ]
+        }
+    ]
+}
