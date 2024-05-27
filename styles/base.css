@@ -223,4 +223,109 @@ footer div {
     display: block;
 }
 
+.card {
+    margin: 15px 0 15px;
+}
 
+.card-weather {
+    border: 2px solid #8d0202;
+    background-color: rgb(128, 125, 122);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+	box-shadow: 0 0 .5rem #c2bdbd;
+}
+
+.card-weather h3 {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.card-weather #description {
+    text-transform: capitalize;
+    margin: .3rem 0;
+    font-size: 1.2rem;
+    color: #090322;
+}
+
+.card-weather #graphic {
+    box-shadow: 0 0 1rem #181616;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.card-weather #temperature {
+    font-size: 1.5rem;
+}
+
+.card-weather .visited {
+    color: #55ee2fb0;
+    font-size: 1.5rem;
+    background-color: #090322;
+    border-radius: 7px;
+}
+
+footer div {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    display: block;
+}
+
+
+
+
+/*json practice*/
+.weather-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #030855;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.weather-card h2 {
+    margin-top: 0;
+}
+
+#weather-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+#activities {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #090322;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#activities h3 {
+    margin-top: 0;
+    color: #0073e6;
+}
+
+#activities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#activities ul li {
+    margin: 10px 0;
+}
+
+#activities ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+#activities ul li a:hover {
+    text-decoration: underline;
+}

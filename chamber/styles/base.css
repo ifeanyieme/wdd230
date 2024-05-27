@@ -510,6 +510,25 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.member-card {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-view .member-card {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#toggleView {
+    display: block;
+    margin: 1em auto;
+}
+
 
   @media (max-width: 768px) {
     .form-container {

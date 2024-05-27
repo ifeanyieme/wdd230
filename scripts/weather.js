@@ -1,29 +1,43 @@
-async function fetchWeatherData() {
-    const apiKey ='c533ba184ac48e09c20921835b9171b0'; 
-    const city = 'ABIA_STATE'; 
-    const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${abiastate}&appid=${c533ba184ac48e09c20921835b9171b0}&units=metric`;
+// SELECT HTML ELEMENT IN THE DOCUMENT
+const myTown = document.querySelector('#town');
+const myDescription = document.querySelector('#description');
+const myTemperature = document.querySelector('#temperature');
+const myGraphic = document.querySelector('#graphic');
 
-    try {
-        const response = await fetch(home.openweathermap.org/api_keys);
-        const data = await response.json();
-        displayWeather(data);
-    } catch (error) {
-        console.error('Error fetching weather data:', error);
+// CREATE REQUIRED VARIABLE FOR THE URL
+const myKey = '74197396bec3354ca932de15f887aaf9'
+const myLat = '5.54'
+const myLong = '7.89'
+
+// CONSTRUCTING A FULL PATH USING LITERAL
+const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}`
+
+async function apiFetch() {
+  try {
+    const response = await fetch(myUrl);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data); // testing only
+      displayResult(data); // uncomment when ready
+    } else {
+        throw Error(await response.text());
     }
-    
-
-        // Extract necessary information
-        const temp = data.main.temp;
-        const description = data.weather[0].description;
-        const icon = data.weather[0].icon;
-        const iconURL = `http://openweathermap.org/img/wn/${icon}@2x.png`;
-
-        // Update the DOM
-        document.getElementById('temperature').textContent = `Temperature: ${temp}°C`;
-        document.getElementById('description').textContent = description;
-        document.getElementById('weather-icon').innerHTML = `<img src="${iconURL}" alt="${description}">`;
-    
+  } catch (error) {
+      console.log(error);
+  }
 }
 
-// Call the function to fetch weather data
-fetchWeatherData();
+// DISPLAY THE JSON DATA ON MY WEB PAGE
+function displayResult(data) {
+  console.log('hello')
+  myTown.innerHTML = data.name
+  myDescription.innerHTML = data.weather[0].description
+  myTemperature.innerHTML = `${data.main.temp}&deg;F`
+
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+  myGraphic.setAttribute('src', iconsrc)
+  myGraphic.setAttribute('alt', data.weather[0].description)
+}
+
+
+apiFetch();

@@ -100,22 +100,14 @@
                 <h2>
                     Information
                 </h2>
-                <!-- Placeholder for weather information -->
-                <p>Weather: <span id="weather-info"></span></p>
-            
-                <div id="weather-card">
-                    <h2>Current Weather</h2>
-                    <div id="weather-icon"></div>
-                    <p id="temperature">Temperature: --°C</p>
-                    <p id="description">Description: --</p>
+                <div class="card-weather">
+                    <h3>Current Weather In: <span id="town"></span></h3>
+                    <img id="graphic" src="" alt="">
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                    <p class="visited">Visits: <span id="visits">0</span></p>
+
                 </div>
-
-                <div></div>
-
-
-                <!-- Placeholder for number of visits to the page -->
-                <p>Visits: <span id="visits">0</span></p>
-                <!-- Add more information placeholders as needed -->
             </section>
         </div>
     </main>
@@ -133,6 +125,7 @@
     <script src="scripts/getDates.js"></script>    
     <script src="scripts/weather.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/visitCounter.js"></script>
 
 
 </body>
