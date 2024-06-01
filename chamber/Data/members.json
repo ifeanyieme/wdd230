@@ -1,58 +1,83 @@
 [
   {
-      "name": "Company A",
+      "name": "Enugu Chamber of Commerce",
       "address": "123 Elm St, Springfield",
       "phone": "123-456-7890",
       "website": "http://www.companya.com",
-      "image": "abstract-logo-flat-background_23-2148156125.avif",
+      "image": "E-commerce1.jpg",
       "membershipLevel": "Gold"
   },
   {
-      "name": "Company B",
+      "name": "Ebonyi Chamber of Commerce",
       "address": "456 Oak St, Springfield",
       "phone": "987-654-3210",
       "website": "http://www.companyb.com",
-      "image": "abstract-orange-triangle-logo_1043-120.avif",
+      "image": "earth.avif",
       "membershipLevel": "Silver"
   },
   {
-      "name": "Company C",
+      "name": "Abuja Chamber of Commerce",
       "address": "789 Pine St, Springfield",
       "phone": "555-123-4567",
       "website": "http://www.companyc.com",
-      "image": "branding-identity-corporate-c-logo-vector-design-template_460848-13932.avif",
+      "image": "Studio.jpg",
       "membershipLevel": "Bronze"
   },
   {
-      "name": "Company D",
+      "name": "Khiddle Chamber of Commerce",
       "address": "321 Maple St, Springfield",
       "phone": "444-555-6666",
       "website": "http://www.companyd.com",
-      "image": "gradient-communication-design-template_23-2149837179.avif",
+      "image": "logistics-Market.jpg",
       "membershipLevel": "Gold"
   },
   {
-      "name": "Company E",
+      "name": "Nassarawa Chamber of Commerce",
       "address": "654 Birch St, Springfield",
       "phone": "777-888-9999",
       "website": "http://www.companye.com",
-      "image": "gradient-communication-design-template_23-2149837182.avif",
+      "image": "rivers.jpg",
       "membershipLevel": "Silver"
   },
   {
-      "name": "Company F",
+      "name": "Ogun Chamber of Commerce",
       "address": "987 Cedar St, Springfield",
       "phone": "222-333-4444",
       "website": "http://www.companyf.com",
-      "image": "gradient-culture-logo-template_23-2149840309.avif",
+      "image": "skycrapper-new-york.jpg",
       "membershipLevel": "Bronze"
   },
   {
-      "name": "Company G",
+      "name": "Anambra Chamber of Commerce",
       "address": "159 Willow St, Springfield",
       "phone": "111-222-3333",
       "website": "http://www.companyg.com",
-      "image": "gradient-quill-pen-design-template_23-2149837194.avif",
+      "image": "observation-urban-building.jpg",
       "membershipLevel": "Gold"
-  }
+  },
+  {
+    "name": "Asaba Chamber of Commerce",
+    "address": "159 Willow St, Springfield",
+    "phone": "111-222-3333",
+    "website": "http://www.companyg.com",
+    "image": "observation-urban-building.jpg",
+    "membershipLevel": "Gold"
+},
+{
+    "name": "Jos Chamber of Commerce",
+    "address": "159 Willow St, Springfield",
+    "phone": "111-222-3333",
+    "website": "http://www.companyg.com",
+    "image": "observation-urban-building.jpg",
+    "membershipLevel": "Gold"
+},
+{
+    "name": "Kano Chamber of Commerce",
+    "address": "159 Willow St, Springfield",
+    "phone": "111-222-3333",
+    "website": "http://www.companyg.com",
+    "image": "observation-urban-building.jpg",
+    "membershipLevel": "Gold"
+}
+
 ]
