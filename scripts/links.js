@@ -1,4 +1,4 @@
-const baseURL = "https://ifeanyieme.github.io/wdd230/"; // I replaced my GitHub Pages URL here.
+const baseURL = "https://christianuche.github.io/wdd230/"; // I replaced my GitHub Pages URL here.
 const linksURL = `${baseURL}data/links.json`;
 
 async function getLinks() {
