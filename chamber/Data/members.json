@@ -1,0 +1,58 @@
+[
+  {
+      "name": "Company A",
+      "address": "123 Elm St, Springfield",
+      "phone": "123-456-7890",
+      "website": "http://www.companya.com",
+      "image": "abstract-logo-flat-background_23-2148156125.avif",
+      "membershipLevel": "Gold"
+  },
+  {
+      "name": "Company B",
+      "address": "456 Oak St, Springfield",
+      "phone": "987-654-3210",
+      "website": "http://www.companyb.com",
+      "image": "abstract-orange-triangle-logo_1043-120.avif",
+      "membershipLevel": "Silver"
+  },
+  {
+      "name": "Company C",
+      "address": "789 Pine St, Springfield",
+      "phone": "555-123-4567",
+      "website": "http://www.companyc.com",
+      "image": "branding-identity-corporate-c-logo-vector-design-template_460848-13932.avif",
+      "membershipLevel": "Bronze"
+  },
+  {
+      "name": "Company D",
+      "address": "321 Maple St, Springfield",
+      "phone": "444-555-6666",
+      "website": "http://www.companyd.com",
+      "image": "gradient-communication-design-template_23-2149837179.avif",
+      "membershipLevel": "Gold"
+  },
+  {
+      "name": "Company E",
+      "address": "654 Birch St, Springfield",
+      "phone": "777-888-9999",
+      "website": "http://www.companye.com",
+      "image": "gradient-communication-design-template_23-2149837182.avif",
+      "membershipLevel": "Silver"
+  },
+  {
+      "name": "Company F",
+      "address": "987 Cedar St, Springfield",
+      "phone": "222-333-4444",
+      "website": "http://www.companyf.com",
+      "image": "gradient-culture-logo-template_23-2149840309.avif",
+      "membershipLevel": "Bronze"
+  },
+  {
+      "name": "Company G",
+      "address": "159 Willow St, Springfield",
+      "phone": "111-222-3333",
+      "website": "http://www.companyg.com",
+      "image": "gradient-quill-pen-design-template_23-2149837194.avif",
+      "membershipLevel": "Gold"
+  }
+]

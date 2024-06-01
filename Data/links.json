@@ -1,63 +1,101 @@
 {
-    "weeks": [
+  "weeks": [
+    {
+      "week": "Week 1",
+      "links": [
         {
-            "week": "Week 1",
-            "links": [
-                {
-                    "url": "week1/activity1.html",
-                    "title": "HolyGrail Layout"
-                },
-                {
-                    "url": "week1/activity2.html",
-                    "title": "Media Queries"
-                }
-            ]
+          "url": "week-one/holy-grail.html",
+          "title": "Holy Grail"
         },
         {
-            "week": "Week 2",
-            "links": [
-                {
-                    "url": "week2/responsive.html",
-                    "title": "Responsive Design"
-                }
-            ]
-        },
-        {
-            "week": "Week 3",
-            "links": [
-                {
-                    "url": "week3/responsive.html",
-                    "title": "Responsive Design"
-                }
-            ]
-        },
-        {
-            "week": "Week 4",
-            "links": [
-                {
-                    "url": "week4/responsive.html",
-                    "title": "Responsive Design"
-                }
-               
-            ]
-        },
-        {
-            "week": "Week 5",
-            "links": [
-                {
-                    "url": "week5/responsive.html",
-                    "title": "Responsive Design"
-                }
-            ]
-        },
-        {
-            "week": "Week 6",
-            "links": [
-                {
-                    "url": "week2/responsive.html",
-                    "title": "Responsive Design"
-                }
-            ]
+          "url": "week-one/media-query.html",
+          "title": "Media Queries"
         }
-    ]
+      ]
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        {
+          "url": "week-two/design.html",
+          "title": "Design Principles"
+        },
+        {
+          "url": "week-two/design.html",
+          "title": "Favion"
+        },
+        {
+          "url": "week-two/design.html",
+          "title": "Social Media Meta Tags"
+        },
+        {
+          "url": "week-two/index.html",
+          "title": "Responsive Navigation"
+        },
+        {
+          "url": "week-two/bom.html",
+          "title": "Book of Mormon"
+        }
+      ]
+    },
+    {
+      "week": "Week 3",
+      "links": [
+        {
+          "url": "index.html",
+          "title": "WebP"
+        },
+        {
+          "url": "week-three/lazyload.html",
+          "title": "Lazy Load Images"
+        },
+        {
+          "url": "week-three/responsive-images.html",
+          "title": "Responsive Images"
+        },
+        {
+          "url": "week-three/bom.html",
+          "title": "Web Storage API"
+        }
+      ]
+    },
+    {
+      "week": "Week 4",
+      "links": [
+        {
+          "url": "week-four/pseudo.html",
+          "title": "CSS Pseudo-Class"
+        },
+        {
+          "url": "week-four/Form-start/index.html",
+          "title": "Course Proposal Form"
+        },
+        {
+          "url": "week-four/Form-start/thanks.html",
+          "title": "Course Proposal Application Message"
+        },
+        {
+          "url": "week-four/tablebuild.html",
+          "title": "HTML Table Build"
+        }
+      ]
+    },
+    {
+      "week": "Week 5",
+      "links": [
+        {
+          "url": "week-five/data/new-members.json",
+          "title": "JSON"
+        },
+        {
+          "url": "week-five/prophets.html",
+          "title": "Latter-day Prophets"
+        },
+        {
+          "url": "week-five/weather.html",
+          "title": "Consuming a Weather API"
+        }
+      ]
+    }
+  ]
 }

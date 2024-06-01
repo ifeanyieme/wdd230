@@ -42,40 +42,28 @@
                 </ul>
             </nav>
         </div>
-    <header>
-      <main>
-        <button id="toggleView">Toggle View</button>
-        <div id="memberContainer"></div>
+    </header>
+    <main>
+        <div class="toggle-buttons">
+            <button id="grid-view">⏹️Grid</button>
+            <button id="list-view">📄List</button>
+        </div>
+        <div id="member-container" class="grid-view"></div>
     </main>
-    
-          
     <footer>
-        <div class="footer-content">
-            <p>&copy; <span id="year"></span> Eme Ifeanyi Okali</p>
-            <p id="lastModified"></p>
-            <p>Weather: <span id="weather">N/A</span></p>
-                <!-- Placeholder for number of visits to the page -->
-                <p>Visits: <span id="visits">N/A</span></p>
-                <p>23 GRA Avenue</p>
-                <p>Umuahia, Abia State</p>
-                <p>Email: emeprosper4@gmail.com</p>
-              
-                <footer class="footer">
-                    <ul class="social-media-icons">
-                        <li><a href="https://www.facebook.com/YourPage" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
-                        <li><a href="https://twitter.com/YourAccount" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
-                        <li><a href="https://www.instagram.com/YourAccount" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></li>
-                        <!-- Add more social media icons as needed -->
-                    </ul>
-               <footer>
+        <!-- Footer content -->
+        <div>
+            <p>Contact us: email@example.com | Phone: 0906-573-5502</p>
+            <p>Developed by Eme Ifeanyi Okali</p>
+            <p>WDD 230 Project | Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>
-    <script src="scripts/getDates.js"></script>
-    <script src="scripts/directory.js"></script> 
-   
-  
+    <script src="scripts/getDateTime.js"></script>
+    <script src="scripts/members.js"></script>
+    <script src="scripts/darkMode.js"></script>
 
-    <!-- JavaScript -->
-    <!-- Add JavaScript code for last modification date -->
+
+
+    
 </body>
 </html>

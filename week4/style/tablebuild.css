@@ -1,0 +1,46 @@
+/* Basic styling for the table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+}
+
+/* Caption styling */
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Header row styling */
+thead tr {
+    background-color: #f2f2f2;
+}
+
+thead th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Body row styling */
+tbody tr {
+    border: 1px solid #ddd;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
