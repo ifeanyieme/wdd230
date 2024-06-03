@@ -1,12 +1,12 @@
 [
-  {
-      "name": "Enugu Chamber of Commerce",
-      "address": "123 Elm St, Springfield",
-      "phone": "123-456-7890",
-      "website": "http://www.companya.com",
-      "image": "E-commerce2.jpg",
-      "membershipLevel": "Gold"
-  },
+    {
+        "name": "Enugu Chamber of Commerce",
+        "address": "789 Pine St, Springfield",
+        "phone": "555-123-4567",
+        "website": "http://www.companyc.com",
+        "image": "Studio.jpg",
+        "membershipLevel": "Bronze"
+    },
   {
       "name": "Ebonyi Chamber of Commerce",
       "address": "456 Oak St, Springfield",
@@ -24,13 +24,13 @@
       "membershipLevel": "Bronze"
   },
   {
-      "name": "Khiddle Chamber of Commerce",
-      "address": "321 Maple St, Springfield",
-      "phone": "444-555-6666",
-      "website": "http://www.companyd.com",
-      "image": "logistics-Market.jpg",
-      "membershipLevel": "Gold"
-  },
+    "name": "Khiddle Chamber of Commerce",
+    "address": "987 Cedar St, Springfield",
+    "phone": "222-333-4444",
+    "website": "http://www.companyf.com",
+    "image": "skycrapper-new-york.jpg",
+    "membershipLevel": "Bronze"
+},
   {
       "name": "Nassarawa Chamber of Commerce",
       "address": "654 Birch St, Springfield",
