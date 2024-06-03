@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const listViewButton = document.getElementById('list-view');
 
     // Fetch the member data
-    fetch('data/members.json')
+    fetch('data/member.json')
         .then(response => response.json())
         .then(data => {
             renderGridView(data);
@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching member data:', error));
 
-    function renderGridView(members) {
+    function renderGridView(member) {
         memberContainer.className = 'grid-view';
-        memberContainer.innerHTML = members.map(member => `
+        memberContainer.innerHTML = member.map(member => `
             <div class="member-card">
                 <img src="images/${member.image}" alt="${member.name}">
                 <h3>${member.name}</h3>
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `).join('');
     }
 
-    function renderListView(members) {
+    function renderListView(member) {
         memberContainer.className = 'list-view';
         memberContainer.innerHTML = members.map(member => `
             <div class="member-list-item">
