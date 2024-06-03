@@ -554,10 +554,18 @@ body {
     padding: 10px 20px;
     margin: 0 5px;
     cursor: pointer;
-    background-color: #007BFF;
+    background-color: #052c55;
     color: #fff;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    box-shadow: 4px 6px 8px rgba(17, 14, 14, 0.877);
+}
+
+.toggle-buttons button:hover {
+    background-color: #0056b3;
 }
 
 .toggle-buttons button.active {
@@ -570,9 +578,6 @@ body {
     gap: 20px;
     justify-items: center;
 }
-
-
-
 
 
 
